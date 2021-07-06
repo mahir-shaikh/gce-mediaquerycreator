@@ -13,11 +13,8 @@ chrome.runtime.onMessage.addListener((msg, sender, response) => {
         // (For your specific requirements `document.querySelectorAll(...)`
         //  should be equivalent to jquery's `$(...)`.)
         var domInfo = {
-            total: document.querySelectorAll('*').length,
-            inputs: document.querySelectorAll('input').length,
-            buttons: document.querySelectorAll('button').length,
-            width: window.innerHeight,
-            height: window.innerWidth,
+            width: window.innerWidth,
+            height: window.innerHeight,
         };
 
         // Directly respond to the sender (popup), 
