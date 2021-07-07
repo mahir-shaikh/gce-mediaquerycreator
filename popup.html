@@ -7,7 +7,8 @@
 </head>
 
 <body>
-  <section class="mq-section sticky-section">
+  <section class="mq-section">
+    <!-- <section class="mq-section sticky-section"> -->
     <h2 class="mq-header">
       Page Dimensions
     </h2>
@@ -15,14 +16,20 @@
       <div class="mq-container">
         <h3 class="mq-label">Width</h3>
         <div class="mq-value">
-          <span id="width">N/A</span>
+          <div class="mq-value-text" id="width-copytext">
+            <span id="width">N/A</span>
+          </div>
+          <button class="c2c-button" data-id="width-copytext" data-tooltip="Copy to clipboard" data-tooltip-location="left"><i class="c2c-icon"></i></button>
         </div>
       </div>
 
       <div class="mq-container">
         <h3 class="mq-label">Height</h3>
         <div class="mq-value">
-          <span id="height">N/A</span>
+          <div class="mq-value-text" id="height-copytext">
+            <span id="height">N/A</span>
+          </div>
+          <button class="c2c-button" data-id="height-copytext" data-tooltip="Copy to clipboard" data-tooltip-location="left"><i class="c2c-icon"></i></button>
         </div>
       </div>
     </div>
@@ -35,19 +42,28 @@
     <div class="mq-container">
       <h3 class="mq-label">Exact Width</h3>
       <div class="mq-value">
-        @media screen and (width: <span id="exactwidth">N/A</span>px) { ... }
+        <div class="mq-value-text" id="exactwidth-copytext">
+          @media screen and (width: <span id="exactwidth">N/A</span>px) { ... }
+          </div>
+        <button class="c2c-button" data-id="exactwidth-copytext" data-tooltip="Copy to clipboard" data-tooltip-location="left"><i class="c2c-icon"></i></button>
       </div>
     </div>
     <div class="mq-container">
       <h3 class="mq-label">Width less than</h3>
       <div class="mq-value">
-        @media screen and (max-width: <span id="widthlessthan">N/A</span>px) { ... }
+        <div class="mq-value-text" id="widthlessthan-copytext">
+          @media screen and (max-width: <span id="widthlessthan">N/A</span>px) { ... }
+          </div>
+        <button class="c2c-button" data-id="widthlessthan-copytext" data-tooltip="Copy to clipboard" data-tooltip-location="left"><i class="c2c-icon"></i></button>
       </div>
     </div>
     <div class="mq-container">
       <h3 class="mq-label">Width greater than</h3>
       <div class="mq-value">
-        @media screen and (min-width: <span id="widthgreaterthan">N/A</span>px) { ... }
+        <div class="mq-value-text" id="widthgreaterthan-copytext">
+          @media screen and (min-width: <span id="widthgreaterthan">N/A</span>px) { ... }
+          </div>
+        <button class="c2c-button" data-id="widthgreaterthan-copytext" data-tooltip="Copy to clipboard" data-tooltip-location="left"><i class="c2c-icon"></i></button>
       </div>
     </div>
   </section>
@@ -59,19 +75,28 @@
     <div class="mq-container">
       <h3 class="mq-label">Exact Height</h3>
       <div class="mq-value">
-        @media screen and (height: <span id="exactheight">N/A</span>px) { ... }
+        <div class="mq-value-text" id="exactheight-copytext">
+          @media screen and (height: <span id="exactheight">N/A</span>px) { ... }
+          </div>
+        <button class="c2c-button" data-id="exactheight-copytext" data-tooltip="Copy to clipboard" data-tooltip-location="left"><i class="c2c-icon"></i></button>
       </div>
     </div>
     <div class="mq-container">
       <h3 class="mq-label">Height less than</h3>
       <div class="mq-value">
-        @media screen and (max-height: <span id="heightlessthan">N/A</span>px) { ... }
+        <div class="mq-value-text" id="heightlessthan-copytext">
+          @media screen and (max-height: <span id="heightlessthan">N/A</span>px) { ... }
+          </div>
+        <button class="c2c-button" data-id="heightlessthan-copytext" data-tooltip="Copy to clipboard" data-tooltip-location="left"><i class="c2c-icon"></i></button>
       </div>
     </div>
     <div class="mq-container">
       <h3 class="mq-label">Height greater than</h3>
       <div class="mq-value">
-        @media screen and (min-height: <span id="heightgreaterthan">N/A</span>px) { ... }
+        <div class="mq-value-text" id="heightgreaterthan-copytext">
+          @media screen and (min-height: <span id="heightgreaterthan">N/A</span>px) { ... }
+          </div>
+        <button class="c2c-button" data-id="heightgreaterthan-copytext" data-tooltip="Copy to clipboard" data-tooltip-location="left"><i class="c2c-icon"></i></button>
       </div>
     </div>
   </section>
@@ -83,20 +108,29 @@
     <div class="mq-container" id="bootstraplessthan-container">
       <h3 class="mq-label">Less Than</h3>
       <div class="mq-value">
-        @media screen and (max-width: <span id="bootstraplessthan">N/A</span>px) { ... }
+        <div class="mq-value-text" id="bootstraplessthan-copytext">
+          @media screen and (max-width: <span id="bootstraplessthan">N/A</span>px) { ... }
+          </div>
+        <button class="c2c-button" data-id="bootstraplessthan-copytext" data-tooltip="Copy to clipboard" data-tooltip-location="left"><i class="c2c-icon"></i></button>
       </div>
     </div>
     <div class="mq-container" id="bootstrapgreaterthan-container">
       <h3 class="mq-label">Greater than</h3>
       <div class="mq-value">
-        @media screen and (min-width: <span id="bootstrapgreaterthan">N/A</span>px) { ... }
+        <div class="mq-value-text" id="bootstrapgreaterthan-copytext">
+          @media screen and (min-width: <span id="bootstrapgreaterthan">N/A</span>px) { ... }
+          </div>
+        <button class="c2c-button" data-id="bootstrapgreaterthan-copytext" data-tooltip="Copy to clipboard" data-tooltip-location="left"><i class="c2c-icon"></i></button>
       </div>
     </div>
     <div class="mq-container" id="bootstrapbetween-container">
       <h3 class="mq-label">Between</h3>
       <div class="mq-value">
-        @media screen and (max-width: <span id="bootstrapbetweengreater">N/A</span>px and min-width: <span
-          id="bootstrapbetweenless">N/A</span>px) { ... }
+        <div class="mq-value-text" id="bootstrapbetween-copytext">
+          @media screen and (max-width: <span id="bootstrapbetweengreater">N/A</span>px and min-width: <span id="bootstrapbetweenless">N/A</span>px) { ... }
+        </div>
+
+        <button class="c2c-button" data-id="bootstrapbetween-copytext" data-tooltip="Copy to clipboard" data-tooltip-location="left"><i class="c2c-icon"></i></button>
       </div>
     </div>
   </section>
