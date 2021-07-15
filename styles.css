@@ -71,11 +71,19 @@ body::-webkit-scrollbar-thumb{
   font-family: 'Arial', sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+  font-size: 14px;
   height: 100%;
-  width: 145px;
+  width: 150px;
 }
-
+.tooltip-container{
+  top: 3px;
+  cursor: pointer;
+  opacity: 0.8;
+  font-weight: normal;
+}
+.tooltip-container:hover{
+  opacity: 1;
+}
 .mq-value{
     /* background-color: #eee; */
     background-color: #ffffff;
@@ -112,7 +120,8 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
 }
 .c2c-button img{
-  width: 25px;
+  width: 20px;
+  pointer-events: none;
 }
 .c2c-button:hover{
     opacity: 1;
@@ -169,7 +178,7 @@ body::-webkit-scrollbar-thumb{
       rgba(60, 82, 88, 0.44));
     box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.2); */
     color: #FFF;
-    text-align: center;
+    /* text-align: center; */
     white-space: pre-wrap;
     transform: translate(-50%, -5px) scale(0.5);
   }
@@ -305,7 +314,7 @@ body::-webkit-scrollbar-thumb{
   body {
     font-size: 1.2em;
     background: #eaeef1;
-    padding: 15px;
+    padding: 5px;
   }
   @keyframes moveFocus { 
     0%   { background-position: 0% 100% }
