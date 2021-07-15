@@ -1,7 +1,15 @@
 {
     "manifest_version": 3,
     "name": "Media Query Creator",
-    "version": "0.1.0",
+    "version": "1.0.0",
+    "icons": {
+        "16": "./assets/icon16.png",
+        "32": "./assets/icon32.png",
+        "64": "./assets/icon64.png",
+        "128": "./assets/icon128.png",
+        "256": "./assets/icon256.png",
+        "512": "./assets/icon512.png"
+    },
     "content_scripts": [
         {
             "matches": [
